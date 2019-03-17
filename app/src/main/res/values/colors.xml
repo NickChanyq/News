@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="sensor_header_bg_color">#2e73e3</color>
+    <color name="sensor_param_line_color">#2e73e3</color>
+    <color name="sensor_coordinate_line_color">#c0e795</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_little">#50FFFFFF</color>
+
+    <color name="app_primary_color">#2E73E3</color>
+    <color name="app_primary_dark_color">#00ffff</color>
+    <color name="app_transparent">#000000</color>
+
+    <color name="tab_color">#40000000</color>
+    <color name="tab_color2">#20000000</color>
+    <color name="black">#000000</color>
+
+    <color name="color_red">#700000ff</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="background_item_pressed">#50ffffff</color>
+    <color name="background_item_unpressed">#ffffff</color>
+    <color name="textColor_selected">#504d4d4d</color>
+    <color name="textColor_unselected">#504d4d4d</color>
 </resources>

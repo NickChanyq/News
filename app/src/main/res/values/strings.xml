@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">News</string>
+    <string name="app_name">NickApp</string>
+    <string name="activity_name_main">主页</string>
+    <string name="activity_name_splash">闪屏页面</string>
+    <string name="activity_name_newDetial">新闻详情</string>
+    <string name="activity_name_funDetial">电影</string>
 </resources>

@@ -1,0 +1,155 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="20dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:fitsSystemWindows="true"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:theme="@style/PopWindowStyle"
+
+                />
+            <!--android:fitsSystemWindows="true"-->
+            <!--android:theme="@style/PopWindowStyle"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--android:windowTranslucentStatu="true"-->
+            <!--<style name="ToolBarStyle">-->
+            <!--<item name="android:layout_width">match_parent</item>-->
+            <!--&lt;!&ndash;<item name="android:layout_height">?attr/actionBarSize</item>&ndash;&gt;-->
+            <!--<item name="android:layout_height">45dp</item>-->
+            <!--<item name="android:windowTranslucentStatus">true</item>-->
+            <!--<item name="android:minHeight">45dp</item>-->
+            <!--<item name="android:background">?attr/colorPrimary</item>-->
+            <!--<item name="android:theme">@style/PopWindowStyle</item>-->
+            <!--android:id="@+id/toolbar_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:ellipsize="end"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp" />-->
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="导演:"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/movie_director"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="@dimen/margin_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="演员:"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/movie_starring"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_mid"
+                android:layout_marginRight="13dp"
+                android:lineSpacingMultiplier="2"
+                android:text="学长他就像我生命中的灵感，他让我了解爱的积极意义，他就像是让我一直前进的动力，
+
+其实这部在内地12年上映的泰国校园爱情小清新电影，每次想到学生时期的那份纯纯爱恋，总是会把它再刷一遍，遍遍的感触都不同，就像那个她永远在我心裡，但却越来越模糊。
+
+校园+淡淡初恋+死党哥们阋牆+闺密吃醋吵架闹彆扭+成长后回忆的淡淡哀伤与遗憾大致上总结
+
+故事在惯有的校园学长学妹暗恋开始，小水喜欢同校的那个转学生学长阿亮，她爱偷偷在角落看著他踢足球，为了他去选军乐队指挥，参与话剧演出，去报名舞蹈社团，那麽努力的改变自己只为君，中间参杂的学长阿拓闯入让阿亮忍痛退出，其实我们的记忆中或许也曾经历这样的事情，就像歌神张学友与郑中基唱的那首左右为难，一边是友情一边是爱情，如果是您，该怎麽选?  阿亮选了默默退出成全好基友与小水，这是一种属于男人间的友谊。
+
+一直以来泰国爱情电影一直都习惯的走向于暖心，并多少会添上一些些的励志色彩，就像下一站说爱你一样的模式，本片也是用了丑小鸭变天鹅模式，终赢得王子的青睐，但是爱情其实最美妙的部分就是，爱在暧昧不明时最美丽，不知道心中那个中意的他(她)是否也有同样的心情? 其实阿亮学长早就喜欢上了小水的真实与不造作的可爱，但是爱情最残酷的地方就是在不对的时间点遇上对的人，分离就成了爱情电影虐心的一个很重要手段，男女主角必须得分离，不然后面就无法营造出久别重逢的那份无与伦比的美丽。
+
+片中一些绿叶角色的发挥一样让本片增添不少分数，英语老师的搞笑作死，小水闺密们的各种逗比行为，一点一滴的让观众甚至忘了这是一部爱情电影，可能也是部喜剧呢?
+
+片中的许多小场景，话剧社裡王子与灰姑娘的排演，小水与阿拓阿亮学长去旅行的风景，小水对阿亮学长表白的那幕，那些对白再平凡不过，甚至你我都曾经说出口过，但藉由片中主人翁的演绎方式表现出来，总是那麽的温暖与撼动著我。
+
+如果青春期的爱恋故事注定要在悔恨中各自疗癒成长，那麽也愿这种唤作成熟必经之路的过往曾经能让我们都变成更优秀的人，各自在不同的地方默默等待著上天的安排，让更适合我们的人出现，在这之前我们能做的就只是等待，然后.....想办法变得更好!
+
+诚如小水在剧中所说的，在我们每一个人的内心深处，都藏著一个人，每次想起他的时候，会觉得有一点点心痛，但我们依然愿意把他留在心底，就算今天，我们不知道他在那里，他在做些甚麽，但至少知道，是他让我们了解，甚麽是初恋这件小事!"
+                android:maxLines="100"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/btn_star"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end" />
+
+</android.support.design.widget.CoordinatorLayout>

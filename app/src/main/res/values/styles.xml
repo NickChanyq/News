@@ -8,4 +8,51 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--toolbar样式-->
+    <style name="ToolBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:layout_height">?attr/actionBarSize</item>-->
+        <item name="android:layout_height">45dp</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/PopWindowStyle</item>
+
+
+    </style>
+
+    <style name="PopWindowStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:colorBackground">#4f4f4f</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="android:dropDownListViewStyle">@style/dropDownStyle</item>
+        <item name="dropDownListViewStyle">@style/dropDownStyle</item>
+    </style>
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+    </style>
+    <style name="dropDownStyle" parent="android:style/Widget.Holo.ListView.DropDown">
+        <!--<item name="android:listSelector">可添加选中背景颜色</item>-->
+        <item name="android:divider">#908d8d8d</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+    <style name="Theme.MaterialDesign" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/app_primary_color</item>
+        <item name="colorPrimaryDark">@color/app_primary_dark_color</item>
+        <item name="colorAccent">@color/app_primary_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="RecyclerViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+
 </resources>
