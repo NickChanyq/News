@@ -1,1 +1,2 @@
 # News
+手机APP名称：Newz 项目描述：此项目主要为客户提供即时新闻、最新上映电影浏览和IT技术学习资料等信息。 技术要点： 1、视图层采用“ViewPager+Fragment”框架，运用事件分发机制实现ViewPager相互嵌套时外部ViewPager不可滑动。 2、采用模板设计模式，用BaseFragment将页面初始化和数据初始化写到initView和initDta两个抽象方法中，并实现懒加载。 3、整体采用Material Design风格，包括沉浸式Toolbar导航栏，自定义Swiperefreshlayout结合RecylerView实现下拉刷新，上 拉加载更多，CollapsingToolbarLayout实现图片上滑折叠样式。 4、采用开源框架Glide实现图片的异步加载和三级缓存策略，采用Retrofit+Rxjava从网络数据接口获取即时数据并对JSON数据进 行解析后展示。 
